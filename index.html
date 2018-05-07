@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+
+    <title>Address Book 2</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body onload="openBook.display()">
+    <div id="background-over">
+      <form>
+        <h1>My Contacts</h1>
+        <input type="text" class="form-input"  placeholder="Name" id="name">
+        <input type="text" class="form-input" placeholder="Email" id="email">
+        <input type="text" class="form-input" placeholder="Phone" id="phone">
+        <select id="relation" class="form-input" name="relation" >
+          <option value="" disabled selected>Please Select</option>
+          <option value="Family">Family</option>
+          <option value="Friend">Friend</option>
+          <option value="Self">Self</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="button" class="form-input" id="add-button" onclick="openBook.add();"; >Add</button>
+      </form>
+      
+      <section id="contacts-holder">
+          <!-- <button class="material-icons" class="delete">delete</button> -->
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

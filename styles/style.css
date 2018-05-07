@@ -1,0 +1,104 @@
+html {
+  /* box-sizing: border-box; */
+  scroll-behavior: auto;
+}
+
+@font-face {
+  font-family: "Maven Pro Medium";
+  src: url("../styles/maven-pro/MavenPro-Medium.ttf");
+}
+
+body {
+  margin: 0;
+  background-image: url("addressbg.jpg");
+  background-size: 2000px;
+  background-repeat: no-repeat;
+  font-family: "Maven Pro Medium", serif;
+  
+}
+
+#background-over {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+form {
+  margin: 0 auto;
+  width: 450px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(179,178,176, 0.6);
+  padding: 30px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.form-input {
+  box-sizing: border-box;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contacts-holder {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: rgba(255,255,255,0.8); */
+}
+
+.contact {
+  position: relative;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 10px;
+}
+
+ .material-icons {
+  /* text-align: center; */
+  /* width: 1em; */
+  /* height: 1em; */
+  position:absolute;
+  bottom: -0.5em;
+  right: -0.5em;;
+  box-sizing: border-box;
+  border: 1px solid #000000; 
+  border-radius: 500px;
+  background-color: rgba(255,255,255,0.8);
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* :hover {
+  border:none;
+
+} */
+
+:focus {
+  outline: none;
+}
